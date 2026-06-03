@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpaceLab Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #020617
+    );
+}
+
+.login-box{
+    width:380px;
+    padding:40px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 0 25px rgba(0,255,255,0.15);
+}
+
+.logo{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:white;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    color:#94a3b8;
+    text-align:center;
+    margin-bottom:30px;
+    font-size:14px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(255,255,255,0.08);
+    color:white;
+    font-size:15px;
+}
+
+input::placeholder{
+    color:#94a3b8;
+}
+
+input:focus{
+    border:1px solid #06b6d4;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#06b6d4;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 20px #06b6d4;
+}
+
+.extra{
+    margin-top:20px;
+    text-align:center;
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.extra a{
+    color:#06b6d4;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<link rel="icon" type="image/png" href="favicon.png">
+<div class="login-box">
+    
+    <div class="logo">🚀</div>
+
+    <h2>SpaceLab</h2>
+    <p class="subtitle">Explore. Learn. Discover.</p>
+
+    <form>
+        <div class="input-group">
+            <input type="email" placeholder="Email Address">
+        </div>
+
+        <div class="input-group">
+            <input type="password" placeholder="Password">
+        </div>
+
+        <button type="submit">Login</button>
+
+        <div class="extra">
+            Don't have an account?
+            <a href="#">Sign Up</a>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
