@@ -123,14 +123,14 @@ button:hover{
 
     <form id="signupForm">
         <div class="input-group">
-            <input type="email" placeholder="Email Address">
+            <input type="email" id="email" placeholder="Email Address">
         </div>
 
         <div class="input-group">
-            <input type="password" placeholder="Password">
+            <input type="password" id="password" placeholder="Password">
         </div>
 
-        <button type="submit" onclick="signupUser()">Create Account</button>
+        <button type="button" onclick="loginUser()">Login</button>
 
         <div class="extra">
             Don't have an account?
@@ -149,7 +149,7 @@ button:hover{
             let savedPassword = localStorage.getItem("password");
 
             if(email === savedEmail && password === savedPassword){
-                window.location.href = "dashboard.html";
+                window.location.href = "home.html";
             }
             else{
                 alert("Invalid Email or Password");
