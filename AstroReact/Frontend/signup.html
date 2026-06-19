@@ -14,30 +14,66 @@
 
     <form>
 
-        <input type="text" placeholder="Full Name" required>
+        <input type="text" id="name" placeholder="Full Name" required>
 
-        <input type="email" placeholder="Email Address" required>
+        <input type="email" id="email" placeholder="Email Address" required>
 
-        <select required>
+        <select id="role" required>
             <option value="">Choose Role</option>
             <option value="student">Student</option>
             <option value="tutor">Tutor</option>
             <option value="researcher">Researcher</option>
         </select>
 
-        <input type="password" placeholder="Password" required>
+        <input type="password" id="password" placeholder="Password" required>
 
-        <input type="password" placeholder="Confirm Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
 
-        <button type="submit">Create Account</button>
+        <button type="button" onclick="signupUser()">Create Account</button>
+        <!--<button type="button" onclick="alert('Button Working')">-->
+            Create Account
+        </button>
 
     </form>
 
     <div class="login-link">
         Already have an account?
-        <a href="index.html">Login</a>
+        <a href="loginPage.html">Login</a>
     </div>
-
 </div>
+<script>
+
+function signupUser(){
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let role = document.getElementById("role").value;
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+
+    if(name === "" || email === "" || role === "" || password === ""){
+        alert("Please fill all fields");
+        return;
+    }
+
+    if(password !== confirmPassword){
+        alert("Passwords do not match");
+        return;
+    }
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("role", role);
+    localStorage.setItem("password", password);
+
+    alert("Account Created Successfully!");
+
+    location.href = "loginPage.html";
+}
+
+</script>
+
+
 </body>
+
 </html>

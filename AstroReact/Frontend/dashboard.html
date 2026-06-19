@@ -13,20 +13,21 @@
 
     <ul>
         <li><a href="dashboard.html">🏠 Dashboard</a></li>
-        <li>🚀 Explore Reactions</li>
-        <li>🧪 Simulator Lab</li>
-        <li>📚 Learning Hub</li>
-        <li>🔬 Research Corner</li>
-        <li>👤 Profile</li>
-        <li>⚙️ Settings</li>
-        <li>🚪 Logout</li>
+        <li><a href="Reactions.html" class="card">🚀 Explore Reactions</a></li>
+        <li><a href="SimulatorLab.html">🧪 Simulator Lab</a></li>
+        <li><a href="LearningHub.html">📚 Learning Hub</a></li>
+        <li><a href="ResearchCorner.html">🔬 Research Corner</a></li>
+        <li><a href="Profile.html" class="menu-item">👤 Profile</a></li>
+        <li><a href="Settings.html">⚙️ Settings</a></li>
+        <li><a href="#" class="logout" onclick="logoutUser()"> Logout</a></li>
     </ul>
 </div>
 
 <div class="main-content">
 
     <div class="navbar">
-        <h1>Welcome, Satyam 👋</h1>
+        <h1 id="welcomeName">Welcome, User 👋</h1>
+        <p id="userRole"></p>
     </div>
 
     <div class="cards">
@@ -54,6 +55,29 @@
     </div>
 
 </div>
+<script>
+if(localStorage.getItem("isLoggedIn") !== "true"){
+    window.location.href = "loginPage.html";
+}
 
+let name = localStorage.getItem("name");
+let role = localStorage.getItem("role");
+
+if(name && role){
+    document.getElementById("welcomeName").innerText =
+    "Welcome, " + name + " 👋";
+
+    document.getElementById("userRole").innerText =
+    "Role: " + role;
+}
+else{
+    window.location.href = "loginPage.html";
+}
+
+function logoutUser(){
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "loginPage.html";
+}
+</script>
 </body>
 </html>

@@ -121,7 +121,7 @@ button:hover{
     <h2>SpaceLab</h2>
     <p class="subtitle">Explore. Learn. Discover.</p>
 
-    <form>
+    <form id="signupForm">
         <div class="input-group">
             <input type="email" placeholder="Email Address">
         </div>
@@ -130,7 +130,7 @@ button:hover{
             <input type="password" placeholder="Password">
         </div>
 
-        <button type="submit"><a href="dashboard.html">submit</a></button>
+        <button type="submit" onclick="signupUser()">Create Account</button>
 
         <div class="extra">
             Don't have an account?
@@ -139,6 +139,24 @@ button:hover{
     </form>
 
 </div>
+<script>
+    function loginUser(){
+
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            let savedEmail = localStorage.getItem("email");
+            let savedPassword = localStorage.getItem("password");
+
+            if(email === savedEmail && password === savedPassword){
+                window.location.href = "dashboard.html";
+            }
+            else{
+                alert("Invalid Email or Password");
+            }
+        }
+</script>
 
 </body>
+
 </html>
