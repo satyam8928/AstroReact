@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Calculator</title>
+
+    <link rel="stylesheet" href="gravityCal.css">
+</head>
+<body>
+
+<div class="gravity-container">
+
+    <h1>🌍 Gravity Calculator</h1>
+
+    <input
+        type="number"
+        id="mass"
+        placeholder="Enter Mass (kg)"
+    >
+
+    <select id="planet">
+
+        <option value="">Select Planet</option>
+
+        <option value="9.81">🌍 Earth</option>
+
+        <option value="1.62">🌙 Moon</option>
+
+        <option value="3.71">🔴 Mars</option>
+
+        <option value="24.79">🟠 Jupiter</option>
+
+        <option value="10.44">🪐 Saturn</option>
+
+        <option value="8.69">🟦 Uranus</option>
+
+        <option value="11.15">🔵 Neptune</option>
+
+    </select>
+
+    <button onclick="calculateGravity()">
+        Calculate Weight
+    </button>
+
+    <div id="result">
+        Result will appear here
+    </div>
+
+</div>
+
+<script src="gravityCal.js"></script>
+
+</body>
+</html>
