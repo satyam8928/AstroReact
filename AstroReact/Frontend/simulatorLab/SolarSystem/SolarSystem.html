@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Explorer</title>
+
+    <link rel="stylesheet" href="SolarSystem.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌌 Solar System Explorer</h1>
+
+    <div class="planet-grid">
+
+        <div class="planet-card" onclick="showPlanet('earth')">
+            🌍 Earth
+        </div>
+
+        <div class="planet-card" onclick="showPlanet('mars')">
+            🔴 Mars
+        </div>
+
+        <div class="planet-card" onclick="showPlanet('jupiter')">
+            🟠 Jupiter
+        </div>
+
+        <div class="planet-card" onclick="showPlanet('saturn')">
+            🪐 Saturn
+        </div>
+
+        <div class="planet-card" onclick="showPlanet('uranus')">
+            🟦 Uranus
+        </div>
+
+        <div class="planet-card" onclick="showPlanet('neptune')">
+            🔵 Neptune
+        </div>
+
+    </div>
+
+    <div id="planetInfo">
+        Click a planet to explore.
+    </div>
+
+</div>
+
+<script src="SolarSystem.js"></script>
+
+</body>
+</html>

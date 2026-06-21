@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Tracker</title>
+
+    <link rel="stylesheet" href="MissionTracker.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 Mission Tracker</h1>
+
+    <div class="mission-grid">
+
+        <div class="mission-card" onclick="showMission('gaganyaan')">
+            🚀 Gaganyaan
+        </div>
+
+        <div class="mission-card" onclick="showMission('artemis')">
+            🌙 Artemis II
+        </div>
+
+        <div class="mission-card" onclick="showMission('starship')">
+            🛸 Starship
+        </div>
+
+        <div class="mission-card" onclick="showMission('juice')">
+            🛰️ JUICE
+        </div>
+
+        <div class="mission-card" onclick="showMission('tianwen')">
+            🔴 Tianwen
+        </div>
+
+    </div>
+
+    <div id="missionInfo">
+        Click a mission to explore details.
+    </div>
+
+</div>
+
+<script src="MissionTracker.js"></script>
+
+</body>
+</html>

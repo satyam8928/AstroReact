@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohm's Law Calculator</title>
+
+    <link rel="stylesheet" href="ohmsLaw.css">
+</head>
+<body>
+
+<div class="ohms-container">
+
+    <h1>⚡ Ohm's Law Calculator</h1>
+
+    <input
+        type="number"
+        id="voltage"
+        placeholder="Enter Voltage (V)"
+    >
+
+    <input
+        type="number"
+        id="current"
+        placeholder="Enter Current (A)"
+    >
+
+    <button onclick="calculateResistance()">
+        Calculate Resistance
+    </button>
+
+    <div id="result">
+        Result will appear here
+    </div>
+
+</div>
+
+<script src="ohmsLaw.js"></script>
+
+</body>
+</html>
