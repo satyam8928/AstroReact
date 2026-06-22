@@ -2,11 +2,12 @@ AstroReact v1
 
 ✅ Login
 ✅ Signup
+✅ Home Page
 ✅ Dashboard
 ✅ Learning Hub
 ✅ Research Corner
 ✅ Profile
-✅ Home Page
+
 
 🔄 Simulator Lab
 

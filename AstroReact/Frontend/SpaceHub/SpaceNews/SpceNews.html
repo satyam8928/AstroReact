@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space News</title>
+
+    <link rel="stylesheet" href="SpaceNews.css">
+</head>
+<body>
+
+<div class="container">
+
+    <a href="../SpaceHub.html" class="back-btn">
+        ← Space Hub
+    </a>
+
+    <h1>📰 Space News</h1>
+
+    <div class="news-grid">
+
+        <div class="news-card" onclick="showNews('isro')">
+            🛰️ ISRO News
+        </div>
+
+        <div class="news-card" onclick="showNews('nasa')">
+            🚀 NASA News
+        </div>
+
+        <div class="news-card" onclick="showNews('spacex')">
+            🛸 SpaceX News
+        </div>
+
+        <div class="news-card" onclick="showNews('esa')">
+            🌍 ESA News
+        </div>
+
+        <div class="news-card" onclick="showNews('discoveries')">
+            🔭 Discoveries
+        </div>
+
+    </div>
+
+    <div id="newsInfo">
+        Click a category to explore latest updates.
+    </div>
+
+</div>
+
+<script src="SpaceNews.js"></script>
+
+</body>
+</html>
