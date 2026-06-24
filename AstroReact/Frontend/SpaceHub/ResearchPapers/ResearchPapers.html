@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Papers Hub</title>
+
+    <link rel="stylesheet" href="ResearchPapers.css">
+</head>
+<body>
+
+<div class="container">
+
+    <a href="../SpaceHub.html" class="back-btn">
+        ← Space Hub
+    </a>
+
+    <h1>📄 Research Papers Hub</h1>
+
+    <div class="paper-grid">
+
+        <div class="paper-card" onclick="showPaper('astronomy')">
+            🌌 Astronomy Papers
+        </div>
+
+        <div class="paper-card" onclick="showPaper('technology')">
+            🚀 Space Technology
+        </div>
+
+        <div class="paper-card" onclick="showPaper('satellite')">
+            🛰️ Satellite Research
+        </div>
+
+        <div class="paper-card" onclick="showPaper('earth')">
+            🌍 Earth Observation
+        </div>
+
+        <div class="paper-card" onclick="showPaper('ai')">
+            🤖 AI in Space Science
+        </div>
+
+    </div>
+
+    <div id="paperInfo">
+        Click a category to explore research resources.
+    </div>
+
+</div>
+
+<script src="ResearchPapers.js"></script>
+
+</body>
+</html>
