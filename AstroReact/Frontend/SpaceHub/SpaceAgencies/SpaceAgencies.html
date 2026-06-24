@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Agencies</title>
+
+    <link rel="stylesheet" href="SpaceAgencies.css">
+</head>
+<body>
+
+<div class="container">
+
+    <a href="../SpaceHub.html" class="back-btn">
+        ← Space Hub
+    </a>
+
+    <h1>🌍 Space Agencies</h1>
+
+    <div class="agency-grid">
+
+        <div class="agency-card" onclick="showAgency('isro')">
+            🇮🇳 ISRO
+        </div>
+
+        <div class="agency-card" onclick="showAgency('nasa')">
+            🇺🇸 NASA
+        </div>
+
+        <div class="agency-card" onclick="showAgency('esa')">
+            🇪🇺 ESA
+        </div>
+
+        <div class="agency-card" onclick="showAgency('jaxa')">
+            🇯🇵 JAXA
+        </div>
+
+        <div class="agency-card" onclick="showAgency('cnsa')">
+            🇨🇳 CNSA
+        </div>
+
+        <div class="agency-card" onclick="showAgency('spacex')">
+            🚀 SpaceX
+        </div>
+
+    </div>
+
+    <div id="agencyInfo">
+        Click an agency to explore details.
+    </div>
+
+</div>
+
+<script src="SpaceAgencies.js"></script>
+
+</body>
+</html>

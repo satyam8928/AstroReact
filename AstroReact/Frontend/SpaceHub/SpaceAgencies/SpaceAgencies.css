@@ -42,13 +42,13 @@ h1{
     margin-bottom:30px;
 }
 
-.mission-grid{
+.agency-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
     gap:20px;
 }
 
-.mission-card{
+.agency-card{
     background:rgba(255,255,255,0.05);
     border:1px solid rgba(255,255,255,0.1);
     backdrop-filter:blur(10px);
@@ -62,12 +62,12 @@ h1{
     font-weight:600;
 }
 
-.mission-card:hover{
+.agency-card:hover{
     transform:translateY(-5px);
     box-shadow:0 0 20px rgba(0,255,255,0.3);
 }
 
-#missionInfo{
+#agencyInfo{
     margin-top:40px;
     background:rgba(255,255,255,0.05);
     border:1px solid rgba(255,255,255,0.1);
