@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AstroReact Home</title>
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="shortcut icon" href="asset/astroreact-logo.png">
 </head>
 
 <body>
@@ -16,23 +17,24 @@
     </div>
 
     <div class="search-box">
-        <input
+    <input
     type="text"
     id="searchInput"
     placeholder="Search planets, missions, agencies..."
+    onkeydown="if(event.key==='Enter') searchContent()"
     >
     <button onclick="searchContent()">
     Search
     </button>
     </div>
 
-    <div id="searchResult"></div>
-
-    <a href="dashboard.html" class="dashboard-btn">
+    <a href="dashboard/dashboard.html" class="dashboard-btn">
         Dashboard
     </a>
 
 </header>
+
+<div id="searchResult"></div>
 
 <main>
 
@@ -126,10 +128,12 @@
 </section>
 
 </main>
-<script>
+<script src="js/search.js">
 if(localStorage.getItem("isLoggedIn") !== "true"){
     window.location.href = "loginPage.html";
 }
+
+document.getElementById("searchResult").style.display = "none";
 </script>
 
 </body>
