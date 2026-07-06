@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#1e293b;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-btn{
+    text-decoration:none;
+    color:white;
+    background:#06b6d4;
+    padding:12px 22px;
+    border-radius:10px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.nav-btn:hover{
+    background:#0891b2;
+    transform:translateY(-2px);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    width:100%;
+}
+
+.hero img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+/* ================= ARTICLE ================= */
+
+.article{
+    max-width:1000px;
+    margin:50px auto;
+    padding:0 25px;
+}
+
+.article h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.meta{
+    color:#94a3b8;
+    margin-bottom:30px;
+}
+
+.article p{
+    font-size:18px;
+    line-height:1.9;
+    color:#d1d5db;
+}
+
+/* ================= INFO GRID ================= */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    padding:40px;
+}
+
+.info-card{
+    background:#1e293b;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.info-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(6,182,212,.35);
+}
+
+.info-card h2{
+    margin-bottom:15px;
+}
+
+.info-card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#1e293b;
+    color:#94a3b8;
+    margin-top:50px;
+}
