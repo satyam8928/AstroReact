@@ -70,9 +70,16 @@ header{
     cursor:pointer;
 }
 
-.search-box button:hover{
-    background:#0891b2;
-    transform:translateY(-2px);
+.search-box button{
+    padding:14px 25px;
+    border:none;
+    border-radius:30px;
+    background:#06b6d4;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .dashboard-btn{
@@ -84,37 +91,78 @@ header{
     font-weight:bold;
 }
 
-.dashboard-btn:hover{
-    transform:translateY(-2px);
-    box-shadow:0 0 15px #06b6d4;
+/* ================= HERO SECTION ================= */
+
+/*.hero{
+    height:500px;
+    display:flex;
+    align-items:center;
+    padding:60px;
+    background:
+    linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.75)),
+    url("../asset/space-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}*/
+
+.hero{
+    height:500px;
+    display:flex;
+    align-items:center;
+    padding:60px;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #0c4a6e
+    );
+}
+.hero-content{
+    max-width:650px;
 }
 
-/* Sections */
-
-.section{
-    padding:30px 40px;
-}
-
-.section h2{
+.hero h1{
+    font-size:52px;
+    color:white;
     margin-bottom:20px;
 }
 
-/* Horizontal Scroll */
+.hero p{
+    font-size:20px;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:35px;
+}
 
-.scroll-container{
+.hero-buttons{
     display:flex;
     gap:20px;
-    overflow-x:auto;
-    padding-bottom:10px;
 }
 
-.scroll-container::-webkit-scrollbar{
-    height:8px;
-}
-
-.scroll-container::-webkit-scrollbar-thumb{
+.hero-btn{
+    text-decoration:none;
     background:#06b6d4;
+    color:white;
+    padding:15px 30px;
     border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#0891b2;
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(6,182,212,.5);
+}
+
+.hero-btn.secondary{
+    background:#334155;
+}
+
+.hero-btn.secondary:hover{
+    background:#475569;
 }
 
 /* Cards */
@@ -126,6 +174,7 @@ header{
     overflow:hidden;
     transition:.3s;
     cursor:pointer;
+    border:1px solid rgba(255,255,255,.08);
 }
 
 .card img{
@@ -152,7 +201,3 @@ header{
     box-shadow:0 0 20px rgba(6,182,212,.4);
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 20px rgba(6,182,212,.4);
-}

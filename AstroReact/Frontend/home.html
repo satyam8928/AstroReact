@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AstroReact Home</title>
+
+<title>AstroReact | Explore Space Science</title>
+
 <link rel="stylesheet" href="css/home.css">
 <link rel="shortcut icon" href="asset/astroreact-logo.png">
+
 </head>
 
 <body>
@@ -17,15 +20,17 @@
     </div>
 
     <div class="search-box">
-    <input
-    type="text"
-    id="searchInput"
-    placeholder="Search planets, missions, agencies..."
-    onkeydown="if(event.key==='Enter') searchContent()"
-    >
-    <button onclick="searchContent()">
-    Search
-    </button>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search planets, missions, agencies..."
+            onkeydown="if(event.key==='Enter') searchContent()">
+
+        <button onclick="searchContent()">
+            Search
+        </button>
+
     </div>
 
     <a href="dashboard/dashboard.html" class="dashboard-btn">
@@ -38,103 +43,302 @@
 
 <main>
 
-<section class="section">
+<!-- HERO SECTION -->
 
-    <h2>🔥 Trending Today</h2>
+<section class="hero">
 
-    <div class="scroll-container">
+    <div class="hero-content">
 
-        <div class="card">
+        <h1>Explore the Universe with AstroReact</h1>
 
-    <img src="asset/blackhole.jpg" alt="Black Hole">
+        <p>
+            Learn Space Science through Simulations,
+            Research Papers, Missions and Discoveries.
+        </p>
 
-    <div class="card-content">
-        <h3>Black Hole Discovery</h3>
-        <p>Scientists discovered a new supermassive black hole.</p>
-    </div>
+        <div class="hero-buttons">
 
-    </div>
+            <a href="dashboard/dashboard.html" class="hero-btn">
+                🚀 Explore Now
+            </a>
 
-        <div class="card">Mars Research</div>
+            <a href="dashboard/SpaceHub/MissionTracker/MissionTracker.html"
+               class="hero-btn secondary">
 
-        <div class="card">Quantum Computing</div>
+                🌍 Latest Missions
 
-        <div class="card">DNA Breakthrough</div>
+            </a>
 
-    </div>
-
-</section>
-
-<section class="section">
-
-    <h2>📰 Latest Space News</h2>
-
-    <div class="scroll-container">
-
-        <div class="card">
-        NASA Podcast
-        </div>
-
-        <div class="card">
-        ISRO Chairman Interview
-        </div>
-
-        <div class="card">
-        Astronaut Experience
-        </div>
-
-        <div class="card">
-        SpaceX Mission Briefing
         </div>
 
     </div>
 
 </section>
 
+<!-- TRENDING -->
+
 <section class="section">
 
-    <h2>🎙️ Scientist Podcasts & Interviews</h2>
+<h2>🔥 Trending Today</h2>
 
-    <div class="scroll-container">
+<div class="scroll-container">
 
-        <div class="card">Video 1</div>
+<div class="card">
 
-        <div class="card">Video 2</div>
+<img src="asset/blackhole.jpg" alt="Black Hole">
 
-        <div class="card">Video 3</div>
+<div class="card-content">
 
-        <div class="card">Video 4</div>
+<h3>Black Hole Discovery</h3>
 
-    </div>
+<p>
+Scientists discovered a new supermassive black hole.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Mars Research</h3>
+
+<p>Latest Mars exploration updates.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Quantum Computing</h3>
+
+<p>Quantum technology in space missions.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>DNA Breakthrough</h3>
+
+<p>New biological discoveries from space research.</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- NEWS -->
+
 <section class="section">
 
-    <h2>🌌 Space Discoveries</h2>
+<h2>📰 Latest Space News</h2>
 
-    <div class="scroll-container">
+<div class="scroll-container">
 
-        <div class="card">Discovery 1</div>
+<div class="card">
 
-        <div class="card">Discovery 2</div>
+<div class="card-content">
 
-        <div class="card">Discovery 3</div>
+<h3>NASA Podcast</h3>
 
-        <div class="card">Discovery 4</div>
+<p>Weekly NASA space updates.</p>
 
-    </div>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>ISRO Chairman Interview</h3>
+
+<p>Latest ISRO announcements.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Astronaut Experience</h3>
+
+<p>Life aboard the International Space Station.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>SpaceX Mission Briefing</h3>
+
+<p>Upcoming Falcon and Starship missions.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PODCASTS -->
+
+<section class="section">
+
+<h2>🎙️ Scientist Podcasts & Interviews</h2>
+
+<div class="scroll-container">
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Neil deGrasse Tyson</h3>
+
+<p>Space, Physics and the Future.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>NASA Live</h3>
+
+<p>Mission discussions.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>ISRO Scientists</h3>
+
+<p>Innovation and India's missions.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>ESA Podcast</h3>
+
+<p>European Space Agency updates.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DISCOVERIES -->
+
+<section class="section">
+
+<h2>🌌 Space Discoveries</h2>
+
+<div class="scroll-container">
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Exoplanets</h3>
+
+<p>New habitable planet discoveries.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Dark Matter</h3>
+
+<p>Latest dark matter research.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>James Webb</h3>
+
+<p>Deep universe observations.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Solar Storms</h3>
+
+<p>Understanding solar activity.</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 </main>
-<script src="js/search.js">
+
+<!-- SEARCH -->
+
+<script src="js/search.js"></script>
+
+<!-- AUTH -->
+
+<script>
+
 if(localStorage.getItem("isLoggedIn") !== "true"){
-    window.location.href = "loginPage.html";
+
+    window.location.href="loginPage.html";
+
 }
 
-document.getElementById("searchResult").style.display = "none";
+document.getElementById("searchResult").style.display="none";
+
 </script>
 
 </body>
+
 </html>
