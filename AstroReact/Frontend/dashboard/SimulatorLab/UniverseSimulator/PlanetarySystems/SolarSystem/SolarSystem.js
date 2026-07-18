@@ -214,7 +214,14 @@ const orbitData = {
 // ANIMATE PLANETS
 // ==============================
 
+let isAnimating = true;
+
 function animatePlanets(){
+
+    if(!isAnimating){
+        requestAnimationFrame(animatePlanets);
+        return;
+    }
 
     for(const planetName in orbitData){
 
@@ -233,6 +240,18 @@ function animatePlanets(){
         planet.style.left = `calc(50% + ${x}px)`;
 
         planet.style.top = `calc(50% + ${y}px)`;
+
+    document.getElementById("playBtn").addEventListener("click", function(){
+
+    isAnimating = true;
+
+    });
+
+    document.getElementById("pauseBtn").addEventListener("click", function(){
+
+    isAnimating = false;
+
+    });
 
     }
 
