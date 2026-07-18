@@ -1,0 +1,281 @@
+/* ===========================
+GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#020617;
+    color:white;
+    overflow-x:hidden;
+}
+/* ===========================
+HEADER
+=========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:100;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-btn{
+    text-decoration:none;
+    color:white;
+    background:#06b6d4;
+    padding:12px 22px;
+    border-radius:10px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.nav-btn:hover{
+    background:#0891b2;
+    transform:translateY(-2px);
+}
+/* ===========================
+BREADCRUMB
+=========================== */
+
+.breadcrumb{
+    padding:15px 40px;
+    background:#111827;
+    color:#94a3b8;
+}
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+/* ===========================
+SEARCH
+=========================== */
+
+.search-section{
+    display:flex;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
+.search-section input{
+
+    width:600px;
+
+    max-width:90%;
+
+    padding:15px 20px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#1e293b;
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+/* ===========================
+PLANETARY SYSTEM GRID
+=========================== */
+
+.planetary-systems-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    padding:40px;
+
+}
+/* ===========================
+SYSTEM CARD
+=========================== */
+
+.system-card{
+
+    background:#0f172a;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.system-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(6,182,212,.4);
+
+}
+.system-icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+.system-card h2{
+
+    margin-bottom:10px;
+
+}
+
+.system-type{
+
+    color:#06b6d4;
+
+    margin-bottom:12px;
+
+}
+
+.system-description{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+.system-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+.explore-btn,
+.coming-soon-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.explore-btn{
+
+    background:#06b6d4;
+
+    color:white;
+
+}
+
+.explore-btn:hover{
+
+    background:#0891b2;
+
+}
+
+.coming-soon-btn{
+
+    background:#334155;
+
+    color:#cbd5e1;
+
+}
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    padding:20px;
+
+    background:#111827;
+
+    color:#94a3b8;
+
+}
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .planetary-systems-grid{
+
+        padding:20px;
+
+    }
+
+}

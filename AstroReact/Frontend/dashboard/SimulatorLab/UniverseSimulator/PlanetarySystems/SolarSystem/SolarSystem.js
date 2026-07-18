@@ -164,49 +164,57 @@ const orbitData = {
     Mercury:{
         angle:0,
         radius:75,
-        speed:0.04
+        speed:0.04,
+        rotation:2
     },
 
     Venus:{
         angle:0,
         radius:110,
-        speed:0.03
+        speed:0.03,
+        rotation:1
     },
 
     Earth:{
         angle:0,
         radius:150,
-        speed:0.025
+        speed:0.025,
+        rotation:3
     },
 
     Mars:{
         angle:0,
         radius:190,
-        speed:0.02
+        speed:0.02,
+        rotation:2.5
     },
 
     Jupiter:{
         angle:0,
         radius:235,
-        speed:0.015
+        speed:0.015,
+        rotation:5
     },
 
     Saturn:{
         angle:0,
         radius:280,
-        speed:0.012
+        speed:0.012,
+        rotation:4
     },
 
     Uranus:{
         angle:0,
         radius:325,
-        speed:0.009
+        speed:0.009,
+        rotation:3
     },
 
     Neptune:{
         angle:0,
         radius:370,
-        speed:0.007
+        speed:0.007,
+        rotation:3
     }
 
 };
@@ -241,6 +249,8 @@ function animatePlanets(){
 
         planet.style.top = `calc(50% + ${y}px)`;
 
+        planet.style.transform = `rotate(${orbit.angle * orbit.rotation * 50}deg)`;
+
     document.getElementById("playBtn").addEventListener("click", function(){
 
     isAnimating = true;
@@ -259,3 +269,28 @@ function animatePlanets(){
 
 }
 animatePlanets();
+
+// ==============================
+// CREATE STARS
+// ==============================
+
+const starsContainer = document.querySelector(".stars");
+
+for(let i=0; i<250; i++){
+
+    const star = document.createElement("div");
+
+    star.classList.add("star");
+
+    star.style.left = Math.random() * 100 + "%";
+
+    star.style.top = Math.random() * 100 + "%";
+
+    star.style.animationDelay = Math.random() * 2 + "s";
+
+    star.style.animationDuration =
+        (2 + Math.random() * 4) + "s";
+
+    starsContainer.appendChild(star);
+
+}
